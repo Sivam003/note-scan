@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Note Scanner</h1>
+    <div>
+        <button id="open-camera">Take Photo or Upload</button>
+        <input type="file" id="upload-image" accept="image/*" style="display:none;">
+    </div>
+    <div id="camera-container" style="display:none;">
+        <video id="video" width="100%" autoplay></video>
+        <button id="capture">Capture</button>
+        <canvas id="canvas" style="display:none;"></canvas>
+    </div>
+    <img id="captured-image" alt="Captured Image" style="display:none;">
+    <script src="script.js"></script>
+</body>
+</html>
